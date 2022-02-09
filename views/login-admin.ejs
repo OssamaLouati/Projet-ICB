@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="style-login.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <title>Admin section | Login</title>
+	</head>
+	<body>
+        <div class="bgim"></div>
+
+		<div class="login-form">
+			<h1 style="font-size: 35px;color: rgb(168, 183, 196);">Admin Authentification</h1>
+			<form action="/login-st" method="POST">
+				<input type="text" name="email" placeholder="Your INPT email" required>
+				<input type="password" name="password" placeholder="Password given" required>
+				<input type="submit"  value="Sign in">
+				<form >
+					<input type="button" value="Go Back" style="color:aliceblue; border-color: aliceblue; "onclick="history.back()">
+				  </form>
+				<br>
+			</form>
+		</div>
+	</body>
+</html>
