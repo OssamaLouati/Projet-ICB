@@ -24,6 +24,9 @@
 					<input type="button" value="Go Back" style="color:aliceblue; border-color: aliceblue; "onclick="history.back()">
 				  </form>
 				<br>
+				<% if (typeof errors != 'undefined') { %> <% errors.forEach(error => { %>
+					<li><%= error.message %></li>
+					<% }) %> <% } %>
 			</form>
 		</div>
 	</body>
